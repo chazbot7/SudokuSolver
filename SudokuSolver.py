@@ -1,21 +1,18 @@
-# import os
+import os
 
-# Determine file to be solved
-# dir = os.getcwd()
-# dir = "C:/Users/charlied/Documents"
-# changeDir = "N"
-# while changeDir == "N":
-#     changeDir = input("Directory for sudoku file is: {}\nIs this OK? (Y/N)".format(dir))
-#     if changeDir == "Y":
-#         print("Moving on...")
-#     else:
-#         dir = input("Specify new directory:")
-#
-# file = input("Specify filename to solve:")
-# filepath = dir + "\\" + file
-# print("File to be solved: {}".format(filepath))
+# Determine file to be solved. Use current directory as a default
+dir = os.getcwd()
+changeDir = "N"
+while changeDir == "N":
+    changeDir = input("Directory for sudoku file is: {}\nIs this OK? (Y/N)".format(dir))
+    if changeDir == "Y":
+        print("Moving on...")
+    else:
+        dir = input("Specify new directory:")
 
-filePath = "C:/Users/charlied/Documents/sudoku_unsolved_1.txt"
+file = input("Specify filename to solve:")
+filepath = dir + "\\" + file
+print("File to be solved: {}".format(filepath))
 
 # Open and print the file
 ogFile = open(filePath, "r")
