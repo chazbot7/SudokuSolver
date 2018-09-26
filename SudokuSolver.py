@@ -15,7 +15,7 @@
 # filepath = dir + "\\" + file
 # print("File to be solved: {}".format(filepath))
 
-filePath = "C:/Users/charlied/Documents\sudoku_unsolved_1.txt"
+filePath = "C:/Users/charlied/Documents/sudoku_unsolved_1.txt"
 
 # Open and print the file
 ogFile = open(filePath, "r")
